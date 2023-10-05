@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../style';
 import {taj,placeholder} from '../assets';
+import Button from './Button';
 const Hero = () => {
   return (
     <section id='home' className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -24,15 +25,16 @@ const Hero = () => {
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
           of India
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <Button styles={`mt-10`} />
+        {/* <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Embark on a Journey to Unforgettable Adventures with TourBharat. Explore the Rich Culture, 
         Mesmerizing Landscapes, and Vibrant Traditions of India. 
         Your Dream Vacation Starts Here.
-        </p>
+        </p> */}
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={taj} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+        <img src={taj} alt="billing" className="w-[100%] h-[105%] relative z-[5]" />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />

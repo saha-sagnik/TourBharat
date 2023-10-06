@@ -1,6 +1,8 @@
 import styles from "./style"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import Stats from "./components/Stats"
+//import { BrowserRouter as } from "react-router-dom"
 
 const App = () => {
   return (
@@ -14,6 +16,11 @@ const App = () => {
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero/>
+        </div>
+      </div> 
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Stats/>
         </div>
       </div> 
     </div>
